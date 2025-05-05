@@ -71,3 +71,11 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 .DS_Store
+
+DAGV1100/AdventureGame/Library/
+
+DAGV1100/AdventureGame/Logs/
+
+DAGV1100/AdventureGame/Packages/
+
+DAGV1100/AdventureGame/Temp/
