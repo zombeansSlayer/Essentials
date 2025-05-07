@@ -1,7 +1,14 @@
 fileFormatVersion: 2
-guid: 59b22a939a8aa41d3abd6eab9e91f702
+guid: 3a0aa547973e74c0581579ea681bab04
 DefaultImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 155360
+  packageName: Pixel Adventure 1
+  packageVersion: 1.0
+  assetPath: Assets/Pixel Adventure 1/Scenes/Demo.unity
+  uploadId: 332803
