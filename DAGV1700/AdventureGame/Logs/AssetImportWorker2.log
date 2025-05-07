@@ -404,3 +404,88 @@ Memory consumption went from 172.6 MB to 169.1 MB.
 Total: 6.343250 ms (FindLiveObjects: 0.290917 ms CreateObjectMapping: 0.228000 ms MarkObjects: 4.610708 ms  DeleteObjects: 1.213542 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 3178.980748 seconds.
+  path: Assets/Tools/Prefabs/Cylinder.prefab
+  artifactKey: Guid(65a4dc4570f4840ecaa0136bf3bf0139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tools/Prefabs/Cylinder.prefab using Guid(65a4dc4570f4840ecaa0136bf3bf0139) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1f49c7e9f183c486196cc2ae4c6a9dca') in 0.293642375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.661098 seconds.
+  path: Assets/Tools/Store/Prefabs/UseButton.prefab
+  artifactKey: Guid(14b04c3d35cb843c6b7d65521f043528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tools/Store/Prefabs/UseButton.prefab using Guid(14b04c3d35cb843c6b7d65521f043528) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a57e80301eed6673de3fcc09bbcf00c') in 0.0065125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.352885 seconds.
+  path: Assets/Tools/AI/Scenes/Prefabs/AI.prefab
+  artifactKey: Guid(c5fef77fea92f44979b3861266076828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tools/AI/Scenes/Prefabs/AI.prefab using Guid(c5fef77fea92f44979b3861266076828) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e0edc5367d0c1f860d18decb95043c5') in 0.009957083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Tools/Collection/CollectablePanel.prefab
+  artifactKey: Guid(5352c706e821444d3ba29b4dd3ec89f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tools/Collection/CollectablePanel.prefab using Guid(5352c706e821444d3ba29b4dd3ec89f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e06b5305ab31db88a94185707fe5d710') in 0.00230125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x32a8c7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.436 seconds
+Refreshing native plugins compatible for Editor in 0.37 ms, found 3 plugins.
+Native extension for iOS target not found
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.830 seconds
+Domain Reload Profiling: 1268ms
+	BeginReloadAssembly (124ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (266ms)
+		LoadAssemblies (149ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (143ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (126ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (830ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (649ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (45ms)
+			ProcessInitializeOnLoadAttributes (547ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6710 unused Assets / (3.6 MB). Loaded Objects now: 7573.
+Memory consumption went from 175.1 MB to 171.5 MB.
+Total: 6.673500 ms (FindLiveObjects: 0.369542 ms CreateObjectMapping: 0.242083 ms MarkObjects: 4.645958 ms  DeleteObjects: 1.415834 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
