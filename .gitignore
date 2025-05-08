@@ -92,3 +92,5 @@ DAGV1700/AdventureGame/Library/
 *.log
 *.dwlt
 /DAGV1700/AdventureGame/Logs
+
+DAGV1700/AdventureGame/obj/Debug/
