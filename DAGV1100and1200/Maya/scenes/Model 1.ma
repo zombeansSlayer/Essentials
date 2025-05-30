@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Model 1.ma
-//Last modified: Tue, May 27, 2025 06:56:13 PM
+//Last modified: Wed, May 28, 2025 02:31:06 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "Cup" -rfn "CupRN" -typ "mayaAscii" "/Users/anthonyromrell/GitRepos/Essentials/DAGV1100and1200/Maya//scenes/Cup.ma";
 file -rdi 1 -ns "Table" -rfn "TableRN" -typ "mayaAscii" "/Users/anthonyromrell/GitRepos/Essentials/DAGV1100and1200/Maya//scenes/Table.ma";
@@ -23,12 +23,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202504040659-cfc1e8923b";
 fileInfo "osv" "Mac OS X 15.5";
-fileInfo "UUID" "6C8889A9-F04A-B56F-0271-DE861EFC1B15";
+fileInfo "UUID" "F55EDFFC-ED46-75CA-F172-02971AC31396";
 createNode transform -s -n "persp";
 	rename -uid "7749EE1D-124E-89E7-F010-DA8F4BA3A6CD";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 43.254238187893648 17.863881747554426 80.668813313918179 ;
-	setAttr ".r" -type "double3" -6.3383527296954068 1468.1999999992881 2.2555757284777569e-16 ;
+	setAttr ".t" -type "double3" 53.922605655429251 19.778585420405513 73.675897604930157 ;
+	setAttr ".r" -type "double3" -7.5383527296954957 1476.1999999992829 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F5181923-F14A-3307-276C-CEA899E90FD0";
 	setAttr -k off ".v" no;
