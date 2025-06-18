@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8534357799012330444}
   - component: {fileID: 1463396634392808565}
   - component: {fileID: 4175546248057155913}
+  - component: {fileID: 7723963191245543592}
   m_Layer: 0
   m_Name: Spiked Ball
   m_TagString: Untagged
@@ -51,6 +52,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -119,6 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
   triggerEvent:
     m_PersistentCalls:
       m_Calls:
@@ -134,3 +141,25 @@ MonoBehaviour:
           m_StringArgument: Hit
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!95 &7723963191245543592
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2596676587616630849}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8bb1d6bee8f324a00812fe5511d5b63e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
