@@ -4,6 +4,7 @@ using TMPro;
 public class UIElements : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI ghostCount;
+    public SimpleImageBehaviour imgBhvr;
     public SimpleFloatData haunted;
     void Start()
     {
@@ -12,5 +13,6 @@ public class UIElements : MonoBehaviour
     void Update()
     {
         ghostCount.text = haunted.value.ToString();
+        imgBhvr.UpdateWithFloatData();
     }
 }
