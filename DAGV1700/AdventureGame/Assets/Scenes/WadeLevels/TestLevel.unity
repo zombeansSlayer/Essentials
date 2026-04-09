@@ -129,6 +129,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 521088088898610098, guid: 4a01c33f49f0e3c429a7088de1f750d5, type: 3}
   m_PrefabInstance: {fileID: 593476313}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &49510981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 586256907247315526, guid: 3c8047dbe24b46847b83199dd5c7ce6f, type: 3}
+  m_PrefabInstance: {fileID: 1657065138219110303}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &64989094 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 842047876075645811, guid: 9bc97b05473376b44a7a0399db550bea, type: 3}
@@ -633,7 +638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &422392247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,6 +1517,7 @@ GameObject:
   - component: {fileID: 940825115}
   - component: {fileID: 940825121}
   - component: {fileID: 940825119}
+  - component: {fileID: 940825122}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Untagged
@@ -1608,6 +1614,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.35, y: 1, z: 0.35}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &940825122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940825114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695c2ff1461abbb44b6f9d8adae3157a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  batSprites: {fileID: 1921126564}
+  batPosition: {fileID: 940825117}
+  playerPosition: {fileID: 1657065138219110304}
 --- !u!1001 &948060570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2475,7 +2496,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 930502198564803122, guid: 3c8047dbe24b46847b83199dd5c7ce6f, type: 3}
   m_PrefabInstance: {fileID: 1657065138219110303}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 49510981}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e8cbbe35153640cea23bf58a428eab0, type: 3}
@@ -3132,11 +3153,11 @@ Transform:
   m_GameObject: {fileID: 1697294083}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -116.4743, y: 127.97611, z: -5157.0005}
-  m_LocalScale: {x: 57.300003, y: 57.300003, z: 57.300003}
+  m_LocalPosition: {x: -2.0724964, y: -0.52, z: -1.7615738}
+  m_LocalScale: {x: 1.019573, y: 1.019573, z: 1.019573}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2009862968}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1697294085
 MonoBehaviour:
@@ -3153,6 +3174,14 @@ MonoBehaviour:
   ghostCount: {fileID: 1021836100}
   imgBhvr: {fileID: 1440623531}
   haunted: {fileID: 11400000, guid: 580517a106f2a4e4989df0921d63b756, type: 2}
+  camera: {fileID: 1531036507}
+  cameraAnchor: {fileID: 49510981}
+  mapBordersHorizontal:
+  - -10
+  - 10
+  mapBordersVertical:
+  - 0
+  - 1e+9
 --- !u!4 &1710372746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 521088088898610098, guid: 4a01c33f49f0e3c429a7088de1f750d5, type: 3}
@@ -3556,7 +3585,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1697294084}
   - {fileID: 313762853}
   - {fileID: 1202750518}
   m_Father: {fileID: 0}
@@ -3917,9 +3945,6 @@ MonoBehaviour:
           m_StringArgument: Awake
           m_BoolArgument: 1
         m_CallState: 2
-  matchEventConstant:
-    m_PersistentCalls:
-      m_Calls: []
   noMatchEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -4011,41 +4036,9 @@ PrefabInstance:
       value: PlayerCharacter
       objectReference: {fileID: 0}
     - target: {fileID: 2421282844736989149, guid: 3c8047dbe24b46847b83199dd5c7ce6f, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2421282844736989149, guid: 3c8047dbe24b46847b83199dd5c7ce6f, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2421282844736989149, guid: 3c8047dbe24b46847b83199dd5c7ce6f, type: 3}
       propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 422392246}
-    - target: {fileID: 2421282844736989149, guid: 3c8047dbe24b46847b83199dd5c7ce6f, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2421282844736989149, guid: 3c8047dbe24b46847b83199dd5c7ce6f, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 2421282844736989149, guid: 3c8047dbe24b46847b83199dd5c7ce6f, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2421282844736989149, guid: 3c8047dbe24b46847b83199dd5c7ce6f, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2421282844736989149, guid: 3c8047dbe24b46847b83199dd5c7ce6f, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2421282844736989149, guid: 3c8047dbe24b46847b83199dd5c7ce6f, type: 3}
-      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7031993548391765114, guid: 3c8047dbe24b46847b83199dd5c7ce6f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4559,6 +4552,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1531036510}
   - {fileID: 566441768}
+  - {fileID: 1697294084}
   - {fileID: 2009862968}
   - {fileID: 870933345}
   - {fileID: 422392251}
